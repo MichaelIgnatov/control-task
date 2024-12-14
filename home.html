@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Сайт для демонстрации фильмов</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/reset.css">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand brand-color logo" href="#">Онлайн Кинотеатр</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><img src="static/img/menu-m.png"></button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a href="#catalog" class="nav-link">Каталог фильмов</a></li>
+                        <li class="nav-item"><a href="#ratings" class="nav-link">Рейтинги</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link">О нас</a></li>
+                    </ul>
+                </div>
+            </div>  
+        </nav>
+    </header>
+    <main>  
+        <section id="catalog">
+            <div class="container">
+                <h2>Каталог фильмов</h2>
+                <form id="filter">
+                    <div class="form-group">
+                        <label for="genre">Жанр:</label>
+                        <select id="genre">
+                            <option value="all">Все</option>
+                            <option value="drama">Драма</option>
+                            <option value="comedy">Комедия</option>
+                            <option value="fantastic">Фантастика</option>
+                            <option value="action">Боевик</option>
+                            <option value="anime">Аниме</option>
+                            <option value="western">Вестерн</option>
+                            <option value="fantasy">Фэнтези</option>
+                            <option value="detective">Детектив</option>
+                            <option value="sport">Спорт</option>
+                            <option value="thriller">Триллер</option>
+                            <option value="military">Военный</option>
+                            <option value="biography">Биография</option>
+                        </select>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="year">Год выпуска:</label>
+                        <input type="number" id="year" placeholder="Например, 2020">
+                    </div>
+            
+                    <button type="submit" class="filter-button">Фильтровать</button>
+                </form>
+                <div id="movie-list">
+                    <div id="movie-list">
+                        <div class="movie-card" data-genres="drama,fantastic,action">
+                            <div class="rating">8.5</div>
+                            <img src="static/img/Dune.webp" alt="Дюна" class="movie-image">
+                            <div class="movie-card-content">
+                                <h3>Дюна</h3>
+                                <p>Год: 2021</p>
+                                <p>Жанры: Драма, Фантастика, Боевик</p>
+                                <div class="description" style="display: none;">
+                                    <p>Наследник знаменитого дома Атрейдесов Пол отправляется вместе с семьей на одну из самых опасных планет во Вселенной — Арракис. Здесь нет ничего, кроме песка, палящего солнца, гигантских чудовищ и основной причины межгалактических конфликтов — невероятно ценного ресурса, который называется меланж. 
+                                        В результате захвата власти Пол вынужден бежать и скрываться, и это становится началом его эпического путешествия. 
+                                        Враждебный мир Арракиса приготовил для него множество тяжелых испытаний, но только тот, кто готов взглянуть в глаза своему страху, достоин стать избранным.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="movie-card" data-genres="fantastic,drama">
+                            <div class="rating">8.5</div>
+                            <img src="static/img/Interstellar.webp" alt="" class="movie-image">
+                            <div class="movie-card-content">
+                                <h3>Интерстеллар</h3>
+                                <p>Год: 2014</p>
+                                <p>Жанры: Фантастика, Драма</p>
+                                <div class="description" style="display: none;">
+                                    <p>Когда засуха, пыльные бури и вымирание растений приводят человечество к продовольственному кризису, коллектив исследователей и учёных отправляется сквозь червоточину 
+                                        (которая предположительно соединяет области пространства-времени через большое расстояние) в путешествие, чтобы превзойти прежние ограничения для космических путешествий 
+                                        человека и найти планету с подходящими для человечества условиями.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie-card" data-genres="anime,drama">
+                            <div class="rating">8.5</div>
+                            <img src="static/img/VioletEvergarden.webp" alt="" class="movie-image">
+                            <div class="movie-card-content">
+                                <h3>Вайолет Эвергарден</h3>
+                                <p>Год: 2018</p>
+                                <p>Жанры: Аниме, Драма</p>
+                                <div class="description" style="display: none;">
+                                    <p>Некогда один известный профессор в помощь своей слепнущей жене-писательнице создал человекоподобную машину, так называемую автозапоминающую куклу. Подобные куклы получили широкое распространение, и вскоре так стали называть сотрудниц почты, которые помогают людям выражать чувства, находя нужные слова и обращая их в письма. 
+                                        Девушка Вайолет, потерявшая на войне обе руки, восхищается работой автозапоминающих кукол. Больше всего на свете она хочет стать одной из них, чтобы научиться понимать эмоции и узнать значение когда-то сказанных ей слов.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie-card" data-genres="drama,western,action">
+                            <div class="rating">8.5</div>
+                            <img src="static/img/DjangoUnchained.webp" alt="" class="movie-image">
+                            <div class="movie-card-content">
+                                <h3>Джанго освобожденный</h3>
+                                <p>Год: 2012</p>
+                                <p>Жанры: Драма, Вестерн, Боевик</p>
+                                <div class="description" style="display: none;">
+                                    <p>Шульц — эксцентричный охотник за головами, который выслеживает и отстреливает самых опасных преступников. Он освобождает раба по имени Джанго, поскольку тот может помочь ему в поисках трёх бандитов. 
+                                        Джанго знает этих парней в лицо, ведь у него с ними свои счёты.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie-card" data-genres="comedy,fantastic,anime">
+                            <div class="rating">8.5</div>
+                            <img src="static/img/Haryhi.webp" alt="" class="movie-image">
+                            <div class="movie-card-content">
+                                <h3>Исчезновение Харухи Судзумии</h3>
+                                <p>Год: 2010</p>
+                                <p>Жанры: Комедия, Фантастика, Аниме</p>
+                                <div class="description" style="display: none;">
+                                    <p>Наступает середина декабря, и глава бригады SOS Судзумия Харухи объявляет о том, что Рождество они проведут в комнате клуба за рождественским ужином. Все члены SOS начинают приготовления.
+                                        Спустя пару дней по дороге в школу Кён начинает замечать странности: не вяжется разговор с Танигути, тот внезапно заболел и не помнит вчерашнего разговора. В классе нет Харухи, а Рёко Асакура ожила и сидит на её месте, разговаривая с Кёном как ни в чём не бывало. 
+                                        Микуру Асахина не узнает Кёна, а Нагато – обычная девушка и единственный член литературного клуба.
+                                        Ни бригады SOS, ни Харухи в этой школе никогда не существовало...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie-card" data-genres="detective,comedy,drama">
+                            <div class="rating">8.5</div>
+                            <img src="static/img/KnivesOut.webp" alt="" class="movie-image">
+                            <div class="movie-card-content">
+                                <h3>Достать ножи</h3>
+                                <p>Год: 2019</p>
+                                <p>Жанры: Детектив, Комедия, Драма</p>
+                                <div class="description" style="display: none;">
+                                    <p>На следующее утро после празднования 85-летия известного автора криминальных романов Харлана Тромби виновника торжества находят мёртвым. Налицо — явное самоубийство, но полиция по протоколу опрашивает всех присутствующих в особняке членов семьи, хотя, в этом деле больше заинтересован частный детектив Бенуа Блан. 
+                                        Тем же утром он получил конверт с наличными от неизвестного и заказ на расследование смерти Харлана. Не нужно быть опытным следователем, чтобы понять, 
+                                        что все приукрашивают свои отношения с почившим главой семейства, но Блану достаётся настоящий подарок — медсестра покойного, которая физически не выносит ложь.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie-card" data-genres="action,fantastic,drama">
+                            <div class="rating">8.5</div>
+                            <img src="static/img/Avatar.webp" alt="" class="movie-image">
+                            <div class="movie-card-content">
+                                <h3>Аватар</h3>
+                                <p>Год: 2009</p>
+                                <p>Жанры: Боевик, Фантастика, Драма</p>
+                                <div class="description" style="display: none;">
+                                    <p>Бывший морпех Джейк Салли прикован к инвалидному креслу. Несмотря на немощное тело, Джейк в душе по-прежнему остается воином. Он получает задание совершить путешествие в несколько световых лет к базе землян на планете Пандора,
+                                        где корпорации добывают редкий минерал, имеющий огромное значение для выхода Земли из энергетического кризиса.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie-card" data-genres="action,fantastic,drama">
+                            <div class="rating">8.5</div>
+                            <img src="static/img/TheDarkKnight.webp" alt="" class="movie-image">
+                            <div class="movie-card-content">
+                                <h3>Темный рыцарь</h3>
+                                <p>Год: 2008</p>
+                                <p>Жанры: Боевик, Фантастика, Драма</p>
+                                <div class="description" style="display: none;">
+                                    <p>Бэтмен поднимает ставки в войне с криминалом. С помощью лейтенанта Джима Гордона и прокурора Харви Дента он намерен очистить улицы Готэма от преступности. Сотрудничество оказывается эффективным, но скоро они обнаружат себя посреди хаоса, 
+                                        развязанного восходящим криминальным гением, известным напуганным горожанам под именем Джокер.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie-card" data-genres="action,fantastic,detective">
+                            <div class="rating">8.5</div>
+                            <img src="static/img/I,Robot.webp" alt="" class="movie-image">
+                            <div class="movie-card-content">
+                                <h3>Я, робот</h3>
+                                <p>Год: 2004</p>
+                                <p>Жанры: Боевик, Фантастика, Детектив</p>
+                                <div class="description" style="display: none;">
+                                    <p>2035 год. Роботы стали привычной частью быта. Однако ряд консервативно настроенных людей, среди которых полицейский Дел Спунер, не доверяют новым помощникам и видят в них угрозу. Однажды Спунер выезжает на место гибели давнего знакомого, профессора Альфреда Лэннинга, который был ведущим конструктором и теоретиком корпорации U.S. Robotics. 
+                                        Директор компании Лоуренс Робертсон считает, что Лэннинг просто покончил с собой, выбросившись из окна. Однако у Спунера есть сомнения в правдоподобности данной версии. Вместе со специалистом по психологии позитронных роботов Сьюзан Кэлвин он вскоре обнаруживает в лаборатории Лэннинга особенного робота, 
+                                        который вопреки второму закону робототехники игнорирует приказы человека и принимает собственные осознанные решения.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie-card" data-genres="drama,comedy">
+                            <div class="rating">8.5</div>
+                            <img src="static/img/1+1.webp" alt="" class="movie-image">
+                            <div class="movie-card-content">
+                                <h3>1+1</h3>
+                                <p>Год: 2011</p>
+                                <p>Жанры: Драма, Комедия</p>
+                                <div class="description" style="display: none;">
+                                    <p>Пострадав в результате несчастного случая, богатый аристократ Филипп нанимает в помощники человека, который менее всего подходит для этой работы, – молодого жителя предместья Дрисса, только что освободившегося из тюрьмы. 
+                                        Несмотря на то, что Филипп прикован к инвалидному креслу, Дриссу удается привнести в размеренную жизнь аристократа дух приключений.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie-card" data-genres="sport,drama">
+                            <div class="rating">8.5</div>
+                            <img src="static/img/Dviz.webp" alt="" class="movie-image">
+                            <div class="movie-card-content">
+                                <h3>Движение вверх</h3>
+                                <p>Год: 2017</p>
+                                <p>Жанры: Спорт, Драма</p>
+                                <div class="description" style="display: none;">
+                                    <p>Когда проигрыш означал поражение страны, когда нужно было выходить и бороться в раскаленной обстановке из-за произошедшего теракта, великий тренер сборной СССР был готов на все, лишь бы помочь своим подопечным разбить американский миф о непотопляемой команде мечты. 
+                                        Ведь он знал, что создал самую сильную сборную на планете, и в начале заставил поверить в это своих игроков, а затем весь мир.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie-card" data-genres="anime,fantasy,drama">
+                            <div class="rating">8.5</div>
+                            <img src="static/img/Friren.webp" alt="" class="movie-image">
+                            <div class="movie-card-content">
+                                <h3>Провожающая в последний путь Фрирен</h3>
+                                <p>Год: 2023</p>
+                                <p>Жанры: Аниме, Фэнтези, Драма</p>
+                                <div class="description" style="display: none;">
+                                    <p>После 10-летнего путешествия и победы на королём демонов отряд героев возвращается в родные края, чтобы расстаться навсегда. Эльфийка Фрирен с горечью наблюдает, как её спутники один за другим уходят из жизни, 
+                                        ведь эльфы живут дольше людей. Она решает отправиться в новое путешествие, чтобы найти ответы на мучающие её вопросы о смысле жизни.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie-card" data-genres="drama,military,biography">
+                            <div class="rating">8.5</div>
+                            <img src="static/img/HacksawRidge.webp" alt="" class="movie-image">
+                            <div class="movie-card-content">
+                                <h3>По соображениям совести</h3>
+                                <p>Год: 2016</p>
+                                <p>Жанры: Драмма, Военный, Биография</p>
+                                <div class="description" style="display: none;">
+                                    <p>Медик американской армии времён Второй мировой войны Десмонд Досс, который служил во время битвы за Окинаву, 
+                                        отказывается убивать людей и становится первым идейным уклонистом в американской истории, удостоенным Медали Почёта.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie-card" data-genres="action,fantastic">
+                            <div class="rating">8.5</div>
+                            <img src="static/img/IronMan.webp" alt="" class="movie-image">
+                            <div class="movie-card-content">
+                                <h3>Железный человек</h3>
+                                <p>Год: 2008</p>
+                                <p>Жанры: Боевик, Фантастика</p>
+                                <div class="description" style="display: none;">
+                                    <p>Миллиардер-изобретатель Тони Старк попадает в плен к Афганским террористам, которые пытаются заставить его создать оружие массового поражения. В тайне от своих захватчиков Старк конструирует высокотехнологичную киберброню, которая помогает ему сбежать. 
+                                        Однако по возвращении в США он узнаёт, что в совете директоров его фирмы плетётся заговор, чреватый страшными последствиями. Используя своё последнее изобретение, Старк пытается решить проблемы своей компании радикально...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie-card" data-genres="comedy,fantastic">
+                            <div class="rating">8.5</div>
+                            <img src="static/img/IvanVas.webp" alt="" class="movie-image">
+                            <div class="movie-card-content">
+                                <h3>Иван Васильевич меняет профессию</h3>
+                                <p>Год: 1973</p>
+                                <p>Жанры: Комедия, Фантастика</p>
+                                <div class="description" style="display: none;">
+                                    <p>Инженер-изобретатель Тимофеев сконструировал машину времени, которая соединила его квартиру с XVI веком — точнее, с палатами государя Ивана Грозного. 
+                                        Туда-то и попадают тёзка царя пенсионер-общественник Иван Васильевич Бунша и квартирный вор Жорж Милославский, а сам великий государь оказывается в квартире Тимофеева.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie-card" data-genres="anime,fantasy">
+                            <div class="rating">8.5</div>
+                            <img src="static/img/Prizraki.webp" alt="" class="movie-image">
+                            <div class="movie-card-content">
+                                <h3>Унесённые призраками</h3>
+                                <p>Год: 2001</p>
+                                <p>Жанры: Аниме, Фэнтези</p>
+                                <div class="description" style="display: none;">
+                                    <p>Тихиро с мамой и папой переезжает в новый дом. Заблудившись по дороге, они оказываются в странном пустынном городе, где их ждет великолепный пир. Родители с жадностью набрасываются на еду и к ужасу девочки превращаются в свиней, став пленниками злой колдуньи Юбабы. 
+                                        Теперь, оказавшись одна среди волшебных существ и загадочных видений, Тихиро должна придумать, как избавить своих родителей от чар коварной старухи.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie-card" data-genres="anime,fantastic,thriller">
+                            <div class="rating">8.5</div>
+                            <img src="static/img/Steins;Gate.webp" alt="" class="movie-image">
+                            <div class="movie-card-content">
+                                <h3>Врата Штейна</h3>
+                                <p>Год: 2011</p>
+                                <p>Жанры: Аниме, Фантастика, Триллер</p>
+                                <div class="description" style="display: none;">
+                                    <p>Компании удалось построить машину времени из микроволновки и подручных материалов. Вот только потом началось такое, что парадокс дедушки нервно удалился курить в сторонку, а главный герой трижды проклял тот день, когда сдуру открыл врата Штейна. 
+                                        Он был готов рисковать своей жизнью, но не чужими. Впрочем, сделанного, как известно, не воротишь. Или… все же можно?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie-card" data-genres="action,fantastic,thriller">
+                            <div class="rating">8.5</div>
+                            <img src="static/img/Tenet.webp" alt="" class="movie-image">
+                            <div class="movie-card-content">
+                                <h3>Довод</h3>
+                                <p>Год: 2020</p>
+                                <p>Жанры: Боевик, Фантастика, Триллер</p>
+                                <div class="description" style="display: none;">
+                                    <p>После теракта в киевском оперном театре агент ЦРУ объединяется с британской разведкой, чтобы противостоять русскому олигарху, который сколотил состояние на торговле оружием. 
+                                        Для этого агенты используют инверсию времени — технологию будущего, позволяющую времени идти вспять.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie-card" data-genres="comedy,fantasy">
+                            <div class="rating">8.5</div>
+                            <img src="static/img/TheMask.webp" alt="" class="movie-image">
+                            <div class="movie-card-content">
+                                <h3>Маска</h3>
+                                <p>Год: 1994</p>
+                                <p>Жанры: Комедия, Фэнтези</p>
+                                <div class="description" style="display: none;">
+                                    <p>Скромный и застенчивый служащий банка чувствует себя неуверенно с красивыми девушками и вообще рядом с людьми. 
+                                        Волей судьбы к нему попадает волшебная маска, и Стенли Ипкис приобретает способность превращаться в неуязвимое мультяшное существо с озорным характером.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie-card" data-genres="biography,comedy,drama">
+                            <div class="rating">8.5</div>
+                            <img src="static/img/TheWolfofWallStreet.webp" alt="" class="movie-image">
+                            <div class="movie-card-content">
+                                <h3>Волк с Уолл-стрит</h3>
+                                <p>Год: 2013</p>
+                                <p>Жанры: Биография, Комедия, Драма</p>
+                                <div class="description" style="display: none;">
+                                    <p>2035 год. Роботы стали привычной частью быта. Однако ряд консервативно настроенных людей, среди которых полицейский Дел Спунер, не доверяют новым помощникам и видят в них угрозу. Однажды Спунер выезжает на место гибели давнего знакомого, профессора Альфреда Лэннинга, который был ведущим конструктором и теоретиком корпорации U.S. Robotics. Директор компании Лоуренс Робертсон считает, что Лэннинг просто покончил с собой, выбросившись из окна. Однако у Спунера есть сомнения в правдоподобности данной версии. Вместе со специалистом по психологии позитронных роботов Сьюзан Кэлвин он вскоре обнаруживает в лаборатории Лэннинга особенного робота, 
+                                        который вопреки второму закону робототехники игнорирует приказы человека и принимает собственные осознанные решения.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ratings">
+            <div class="container">
+                <h2>Рейтинги</h2>
+                <!-- Контент рейтингов -->
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>О нас</h2>
+                <p>Информация о команде и целях сайта.</p>
+                <!-- Здесь что-то написать -->
+                <h2>Контакты</h2>
+                <p>Свяжитесь с нами</p>
+
+                <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+                    <div id="successToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="toast-header">
+                            <strong class="me-auto">Успех</strong>
+                            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                        </div>
+                        <div class="toast-body">
+                            Ваше сообщение успешно отправлено!
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+                    <div id="errorToast" class="toast mistake-color" role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="toast-header">
+                            <strong class="me-auto">Ошибка</strong>
+                            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                        </div>
+                        <div class="toast-body">
+                            Пожалуйста, исправьте ошибки в форме.
+                        </div>
+                    </div>
+                </div>
+        
+                <form class="needs-validation" novalidate>
+                    <div class="form-floating">
+                        <input type="text" id="contactName" class="form-control" placeholder="Ваше имя" required>
+                        <label for="contactName" class="form-label">Имя</label>
+                        <div class="invalid-feedback">
+                            Пожалуйста, укажите имя.
+                        </div>
+                    </div>
+                    <div class="form-floating mt-3">
+                        <input type="email" class="form-control" id="contactEmail" aria-describedby="emailHelp" placeholder="email" required>
+                        <label for="contactEmail" class="form-label">Email</label>
+                        <div class="invalid-feedback">
+                            Пожалуйста, укажите email.
+                        </div>
+                    </div>
+                    <div class="form-floating mt-3">
+                        <textarea placeholder="Ваше сообщение" class="form-control" id="contactMessage" style="height: 80px" required></textarea>
+                        <label for="contactMessage" class="form-label">Сообщение</label>
+                        <div class="invalid-feedback">
+                            Сообщение не должно быть пустым.
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary align-middle mt-3">Отправить</button>
+                </form>
+            </div>
+        </section>
+        
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img id="modal-image" src="" alt="Фильм">
+                <div id="modal-description" class="modal-description"></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Сайт для демонстрации фильмов</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="static/scripts/script.js"></script>
+</body>
+</html>
