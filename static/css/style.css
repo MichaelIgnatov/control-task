@@ -400,27 +400,27 @@ footer a:hover {
 }
 
 @media (max-width: 1320px) {
-/*     .container {
+    .container {
         max-width: 1200px;
-    } */
+    }
 }
 
 @media (max-width: 1230px) {
-/*     .container {
+    .container {
         max-width: 1100px;
-    } */
+    }
 }
 
 @media (max-width: 1130px) {
-/*     .container {
+    .container {
         max-width: 1000px;
-    } */
+    }
 }
 
 @media (max-width: 1030px) {
-/*     .container {
+    .container {
         max-width: 900px;
-    } */
+    }
 }
 
 @media (max-width: 992px) {
@@ -432,9 +432,9 @@ footer a:hover {
 }
 
 @media (max-width: 930px) {
-/*     .container {
+    .container {
         max-width: 800px;
-    } */
+    }
 
     .movie-card {
         max-width: 245px;
@@ -442,10 +442,10 @@ footer a:hover {
 }
 
 @media (max-width: 840px) {
-/*     .container {
+    .container {
         max-width: 700px;
     }
- */
+
     #filter {
         flex-direction: column;
         align-items: start;
