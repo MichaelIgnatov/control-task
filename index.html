@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Сайт для демонстрации фильмов</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="static/css/reset.css">
     <link rel="stylesheet" href="static/css/style.css">
@@ -18,12 +20,30 @@
                         <li class="nav-item"><a href="#catalog" class="nav-link">Каталог фильмов</a></li>
                         <li class="nav-item"><a href="#ratings" class="nav-link">Рейтинги</a></li>
                         <li class="nav-item"><a href="#about" class="nav-link">О нас</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">Контакты</a></li>
                     </ul>
                 </div>
             </div>  
         </nav>
     </header>
-    <main>  
+    <main> 
+        <section>
+            <div class="welcome-container">
+                <svg viewBox="0 0 1800 300">
+                  <symbol id="s-text">
+                    <text text-anchor="middle" x="50%" y="80%">Добро пожаловать</text>
+                  </symbol>
+              
+                  <g class = "g-ants">
+                    <use xlink:href="#s-text" class="text-copy"></use>
+                    <use xlink:href="#s-text" class="text-copy"></use>
+                    <use xlink:href="#s-text" class="text-copy"></use>
+                    <use xlink:href="#s-text" class="text-copy"></use>
+                    <use xlink:href="#s-text" class="text-copy"></use>
+                  </g>
+                </svg>
+              </div>     
+        </section>
         <section id="catalog">
             <div class="container">
                 <h2>Каталог фильмов</h2>
@@ -57,7 +77,7 @@
                 <div id="movie-list">
                     <div id="movie-list">
                         <div class="movie-card" data-genres="drama,fantastic,action">
-                            <div class="rating">8.5</div>
+                            <div class="rating">7.7</div>
                             <img src="static/img/Dune.webp" alt="Дюна" class="movie-image">
                             <div class="movie-card-content">
                                 <h3>Дюна</h3>
@@ -72,7 +92,7 @@
                         </div>
 
                         <div class="movie-card" data-genres="fantastic,drama">
-                            <div class="rating">8.5</div>
+                            <div class="rating">8.6</div>
                             <img src="static/img/Interstellar.webp" alt="" class="movie-image">
                             <div class="movie-card-content">
                                 <h3>Интерстеллар</h3>
@@ -86,7 +106,7 @@
                             </div>
                         </div>
                         <div class="movie-card" data-genres="anime,drama">
-                            <div class="rating">8.5</div>
+                            <div class="rating">8.1</div>
                             <img src="static/img/VioletEvergarden.webp" alt="" class="movie-image">
                             <div class="movie-card-content">
                                 <h3>Вайолет Эвергарден</h3>
@@ -99,7 +119,7 @@
                             </div>
                         </div>
                         <div class="movie-card" data-genres="drama,western,action">
-                            <div class="rating">8.5</div>
+                            <div class="rating">8.2</div>
                             <img src="static/img/DjangoUnchained.webp" alt="" class="movie-image">
                             <div class="movie-card-content">
                                 <h3>Джанго освобожденный</h3>
@@ -112,7 +132,7 @@
                             </div>
                         </div>
                         <div class="movie-card" data-genres="comedy,fantastic,anime">
-                            <div class="rating">8.5</div>
+                            <div class="rating">7.8</div>
                             <img src="static/img/Haryhi.webp" alt="" class="movie-image">
                             <div class="movie-card-content">
                                 <h3>Исчезновение Харухи Судзумии</h3>
@@ -127,7 +147,7 @@
                             </div>
                         </div>
                         <div class="movie-card" data-genres="detective,comedy,drama">
-                            <div class="rating">8.5</div>
+                            <div class="rating">8.1</div>
                             <img src="static/img/KnivesOut.webp" alt="" class="movie-image">
                             <div class="movie-card-content">
                                 <h3>Достать ножи</h3>
@@ -141,7 +161,7 @@
                             </div>
                         </div>
                         <div class="movie-card" data-genres="action,fantastic,drama">
-                            <div class="rating">8.5</div>
+                            <div class="rating">8.0</div>
                             <img src="static/img/Avatar.webp" alt="" class="movie-image">
                             <div class="movie-card-content">
                                 <h3>Аватар</h3>
@@ -167,7 +187,7 @@
                             </div>
                         </div>
                         <div class="movie-card" data-genres="action,fantastic,detective">
-                            <div class="rating">8.5</div>
+                            <div class="rating">7.8</div>
                             <img src="static/img/I,Robot.webp" alt="" class="movie-image">
                             <div class="movie-card-content">
                                 <h3>Я, робот</h3>
@@ -181,7 +201,7 @@
                             </div>
                         </div>
                         <div class="movie-card" data-genres="drama,comedy">
-                            <div class="rating">8.5</div>
+                            <div class="rating">8.8</div>
                             <img src="static/img/1+1.webp" alt="" class="movie-image">
                             <div class="movie-card-content">
                                 <h3>1+1</h3>
@@ -194,7 +214,7 @@
                             </div>
                         </div>
                         <div class="movie-card" data-genres="sport,drama">
-                            <div class="rating">8.5</div>
+                            <div class="rating">7.5</div>
                             <img src="static/img/Dviz.webp" alt="" class="movie-image">
                             <div class="movie-card-content">
                                 <h3>Движение вверх</h3>
@@ -207,7 +227,7 @@
                             </div>
                         </div>
                         <div class="movie-card" data-genres="anime,fantasy,drama">
-                            <div class="rating">8.5</div>
+                            <div class="rating">8.7</div>
                             <img src="static/img/Friren.webp" alt="" class="movie-image">
                             <div class="movie-card-content">
                                 <h3>Провожающая в последний путь Фрирен</h3>
@@ -220,7 +240,7 @@
                             </div>
                         </div>
                         <div class="movie-card" data-genres="drama,military,biography">
-                            <div class="rating">8.5</div>
+                            <div class="rating">8.2</div>
                             <img src="static/img/HacksawRidge.webp" alt="" class="movie-image">
                             <div class="movie-card-content">
                                 <h3>По соображениям совести</h3>
@@ -233,7 +253,7 @@
                             </div>
                         </div>
                         <div class="movie-card" data-genres="action,fantastic">
-                            <div class="rating">8.5</div>
+                            <div class="rating">8.0</div>
                             <img src="static/img/IronMan.webp" alt="" class="movie-image">
                             <div class="movie-card-content">
                                 <h3>Железный человек</h3>
@@ -246,7 +266,7 @@
                             </div>
                         </div>
                         <div class="movie-card" data-genres="comedy,fantastic">
-                            <div class="rating">8.5</div>
+                            <div class="rating">8.8</div>
                             <img src="static/img/IvanVas.webp" alt="" class="movie-image">
                             <div class="movie-card-content">
                                 <h3>Иван Васильевич меняет профессию</h3>
@@ -272,7 +292,7 @@
                             </div>
                         </div>
                         <div class="movie-card" data-genres="anime,fantastic,thriller">
-                            <div class="rating">8.5</div>
+                            <div class="rating">8.4</div>
                             <img src="static/img/Steins;Gate.webp" alt="" class="movie-image">
                             <div class="movie-card-content">
                                 <h3>Врата Штейна</h3>
@@ -285,7 +305,7 @@
                             </div>
                         </div>
                         <div class="movie-card" data-genres="action,fantastic,thriller">
-                            <div class="rating">8.5</div>
+                            <div class="rating">7.5</div>
                             <img src="static/img/Tenet.webp" alt="" class="movie-image">
                             <div class="movie-card-content">
                                 <h3>Довод</h3>
@@ -298,7 +318,7 @@
                             </div>
                         </div>
                         <div class="movie-card" data-genres="comedy,fantasy">
-                            <div class="rating">8.5</div>
+                            <div class="rating">8.0</div>
                             <img src="static/img/TheMask.webp" alt="" class="movie-image">
                             <div class="movie-card-content">
                                 <h3>Маска</h3>
@@ -311,7 +331,7 @@
                             </div>
                         </div>
                         <div class="movie-card" data-genres="biography,comedy,drama">
-                            <div class="rating">8.5</div>
+                            <div class="rating">8.0</div>
                             <img src="static/img/TheWolfofWallStreet.webp" alt="" class="movie-image">
                             <div class="movie-card-content">
                                 <h3>Волк с Уолл-стрит</h3>
@@ -329,17 +349,126 @@
         </section>
 
         <section id="ratings">
-            <div class="container">
+            <div class="container"> 
                 <h2>Рейтинги</h2>
-                <!-- Контент рейтингов -->
+                <p>В разделе рейтингов представлены топ-5 тайтлов, составленных на основе субъективного вкуса нашей администрации. Эти фильмы и сериалы были выбраны за их уникальность, атмосферу и общее качество. 
+                    Мы уверены, что каждый из этих тайтлов заслуживает вашего внимания!</p>
+                <p>Не стесняйтесь делиться своими впечатлениями и мнениями о выбранных тайтлах — мы всегда рады услышать ваше мнение!</p>
+
+                <div class="ranking-grid">
+                    <div class="ranking-item">
+                        <video width="100%" height="auto" controls>
+                            <source src="static/video/Сериал «Вайолет Эвергарден» (1 сезон) — Русский трейлер [2018].mp4" type="video/mp4">
+                        </video>
+                        <p class="rank">Место 1</p>
+                        <p>Аниме "Вайолет Эвергарден", созданное студией Kyoto Animation, — это не просто история о молодой женщине, 
+                            возвращающейся к жизни после войны; это настоящая симфония эмоций, визуальной красоты и музыки.</p>
+                        <p>Визуальная эстетика "Вайолет Эвергарден" поражает детализацией. Каждая сцена наполнена мягким светом и тонкими нюансами, создавая живой и многослойный мир. 
+                            Пейзажи — от цветущих полей до величественных городов — завораживают своей красотой. Анимация движений персонажей также впечатляет: Вайолет, с её грациозными, 
+                            но механическими движениями, олицетворяет внутреннюю борьбу и стремление понять человеческие эмоции.</p>
+                        <p>Музыка в "Вайолет Эвергарден" — это полноценный участник повествования. Композитор Хироёки Сааведра создал звуковую палитру, которая подчеркивает эмоциональную нагрузку каждой сцены. 
+                            Трек "Violet Evergarden" стал символом истории, наполняя её грустью и надеждой. 
+                            Мелодии идеально дополняют ключевые моменты сюжета, создавая атмосферу глубоких чувств.</p>
+                        <p>
+                            "Вайолет Эвергарден" — это истинное произведение искусства, затрагивающее глубинные струны души. 
+                            Визуальная и музыкальная составляющие делают его уникальным и незабываемым. 
+                            Это аниме не только развлекает, но и заставляет задуматься о важнейших аспектах человеческой жизни, оставляя сладкое послевкусие.
+                        </p>
+                    </div>
+                    <div class="ranking-item">
+                        <video width="100%" height="auto" controls>
+                            <source src="static/video/Врата Штейна  Опенинг    Steins;Gate  Opening.mp4" type="video/mp4">
+                        </video>
+                        <p class="rank">Место 1</p>
+                        <p>
+                            Аниме "Врата Штейна" — это выдающееся произведение в жанре научной фантастики, которое погружает зрителей в мир временных парадоксов и альтернативных реальностей. 
+                            Сюжет сосредоточен вокруг Ринтаро Окабе и его друзей, которые случайно находят способ отправлять сообщения в прошлое, что приводит к неожиданным и драматичным последствиям.</p>
+                        <p>
+                            Первые несколько серий могут показаться монотонными и не слишком интересными, однако, стоит преодолеть этот барьер, и сюжет начинает закручиваться с невероятной скоростью. 
+                            Зрители сталкиваются с множеством неожиданных поворотов, которые заставляют задуматься о природе времени и пространства.</p>
+                        <p>
+                            Главный герой, Окабе Ринтаро, типичный “безумный ученый”, который видит реальность иначе. 
+                            Его мотивация и поступки логичны настолько, насколько это возможно в рамках рваной логики сериала. Сюжет бесподобен, и изменения характера 
+                            главного героя после всех его перемещений во времени показаны великолепно.</p>
+                        <p>Персонажи в “Врата Штейна” невероятно глубоки и интересны. Их эмоциональная сложность и разнообразие поражают, и зрители не могут не сопереживать их переживаниям и борьбе. 
+                            Отношения между персонажами развиваются естественно и органично, что добавляет драматизма и эмоциональной насыщенности сюжету.</p>
+                        <p>Музыкальное сопровождение аниме заслуживает отдельного упоминания. Даже после просмотра всего сезона, опенинг до сих пор играет в голове, оставляя яркое впечатление. 
+                            Визуальная часть также на высоте: анимация качественная, а дизайн персонажей запоминающийся.</p>
+                        <p>Это аниме стоит посмотреть всем любителям научной фантастики. Оно показывает, что нужно ценить то, что имеешь, и бороться до конца ради этого. 
+                            “Врата Штейна” – это история о перемещениях во времени, но на самом деле она о дружбе, любви и самопожертвовании.</p>
+                    </div>
+                    <div class="ranking-item">
+                        <video width="100%" height="auto" controls>
+                            <source src="static/video/По соображениям совести (Русский Трейлер) Эндрю Гарфилд.mp4" type="video/mp4">
+
+                        </video>
+                        <p class="rank">Место 1</p>
+                        <p>
+                            Фильм “По соображениям совести” (Hacksaw Ridge) — это впечатляющий военный байопик, созданный режиссером Мэлом Гибсоном, 
+                            который рассказывает историю героического американского санитара Десмонда Досса, сыгранного Эндрю Гарфилдом. 
+                            В центре сюжета находится молодой провинциальный рабочий, который, несмотря на свою глубокую веру в адвентизм седьмого дня и полное отвержение насилия, 
+                            решает не оставаться в тылу, пока его соотечественники сражаются во Второй мировой войне.
+                        </p>
+                        <p>Также стоит отметить, как "По соображениям совести" ставит вопросы о смысле мужества и жертвы. 
+                            Досса, отказываясь от оружия, демонстрирует, что настоящая храбрость заключается не только в готовности сражаться, 
+                            но и в способности сохранять свою человечность даже в условиях войны. Его выбор — это не просто отказ от насилия, 
+                            это утверждение жизни в ее самых уязвимых и сложных формах.</p>
+                        <p>Фильм также затрагивает тему веры и ее роли в жизни человека. Досса, будучи убежденным христианином, находит смысл своего выбора в духовных убеждениях, что добавляет фильму дополнительный уровень глубины. 
+                            Его вера становится источником силы, позволяя ему противостоять давлению и не поддаваться на провокации.</p>
+                        <p>
+                            "По соображениям совести" — это не просто фильм о войне, а глубокая история о внутреннем мужестве, вере и стойкости. 
+                            Он заставляет задуматься о том, как важно оставаться верным своим принципам в самых сложных обстоятельствах. 
+                            Фильм поднимает важные вопросы о моральной ответственности и выборе, показывая, что истинная сила заключается не только в физическом мужестве, 
+                            но и в способности отстаивать свои убеждения, даже когда мир вокруг вас требует другого.</p>
+                    </div>
+                    <div class="ranking-item">
+                        <video width="100%" height="auto" controls>
+                            <source src="static/video/Темный рыцарь. Русский трейлер (2008) HD.mp4" type="video/mp4">
+                        </video>
+                        <p class="rank">Место 1</p>
+                        <p>Фильм “Тёмный рыцарь” (The Dark Knight) режиссёра Кристофера Нолана — одно из самых значимых кинопроизведений начала XXI века. 
+                            Это не просто очередная глава в истории Бэтмена, а глубокое переосмысление персонажа и его мира</p>
+                        <p>Сюжет сосредоточен на борьбе Бэтмена (Кристиан Бейл) с опасным злодеем Джокером (Хит Леджер), который сбегает из психиатрической лечебницы и становится символом хаоса и анархии. 
+                            Нолан создаёт атмосферу напряжения и неопределённости, заставляя героев пересмотреть свои принципы и границы допустимого</p>
+                        <p>Бэтмен трансформируется из идеалиста в героя-мстителя, чьи действия порой вызывают сомнения. 
+                            Однако главным героем фильма является Харви Дент (Аарон Экхарт), будущий Двуликий, чьи законные и эффективные методы борьбы с преступностью приводят его на грань добра и зла.</p>
+                        <p>Хит Леджер достоин отдельного упоминания. Он великолепно играет Джокера, создавая образ харизматичного и безумного антигероя, олицитвояющего собой анархию. 
+                            Выдающийся актёрский состав, включая Моргана Фримана, Майкла Кейна и Гари Олдмана, добавляет глубину и многослойность повествованию.</p>
+                        <p>“Тёмный рыцарь” — это не просто фильм о супергерое, а сложное произведение, заставляющее задуматься о природе добра и зла, морали и ответственности. 
+                            Это шедевр современного кинематографа, который держит в напряжении и оставляет неизгладимое впечатление.</p>
+                    </div>
+                    <div class="ranking-item">
+                        <video width="100%" height="auto" controls>
+                            <source src="static/video/Джанго Освобожденный.mp4" type="video/mp4">
+                        </video>
+                        <p class="rank">Место 1</p>
+                        <p>«Джанго освобождённый» — это захватывающий фильм, который сочетает в себе стиль, юмор и эмоции. 
+                            Режиссёром выступил Квентин Тарантино, известный своим уникальным подходом к кинематографу.</p>
+                        <p>Сюжет фильма разворачивается вокруг бывшего раба Джанго, который вместе с охотником за головами доктором Кингом Шульцем пытается найти свою жену и освободить её от рабства. 
+                            На их пути стоит злобный рабовладелец Калвин Кеннеди, олицетворяющий все пороки и ужасы рабства.</p>
+                        <p>Актёрская игра в фильме на высшем уровне. Джейми Фокс и Кристоф Вальц прекрасно исполнили роли Джанго и Шульца соответственно, создавая яркий дуэт героев. 
+                            Леонардо ДиКаприо также великолепно справился с ролью злодея, передав всю глубину характера своего персонажа.</p>
+                        <p>Визуальная составляющая фильма также заслуживает внимания. Каждый кадр — это настоящее произведение искусства, создающее атмосферу эпохи и передающее дух времени.</p>
+                        <p>«Джанго освобождённый» — это фильм, который обязательно стоит посмотреть. 
+                            Он не только рассказывает историю борьбы за свободу, но и заставляет задуматься о многих важных вопросах, таких как расизм, насилие и человеческая жестокость.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="about">
             <div class="container">
                 <h2>О нас</h2>
-                <p>Информация о команде и целях сайта.</p>
-                <!-- Здесь что-то написать -->
+                <p>Рады видеть вас на нашем сайте. Мы собрали здесь небольшой католог фильмов и сериалов различных жанров, которые, на наш взгляд, достойны вашего внимания. 
+                    Если вы не знаете, что посмотреть, то воспользуйтесь нашим каталогом, мы уверены, что вы наверняка найдёте там что-нибудь интересное для себя.
+                    Ну а если вы уже матёрый любитель кино и видели все тайтлы представленные в нашем катологе, то почему бы тогда заного не пересмотреть полюбивщийся из них?</p>
+                <p>В будущем мы обязательно расширим наш католог... Ну а пока, приятного просмотра. </p>
+                <p>С уважением, администрациия сайта</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
                 <h2>Контакты</h2>
                 <p>Свяжитесь с нами</p>
 
@@ -403,7 +532,17 @@
         </div>
     </main>
     <footer>
-        <p>&copy; 2023 Сайт для демонстрации фильмов</p>
+        <div>
+            <a href="https://t.me/your_channel" target="_blank">
+                <i class="fab fa-telegram"></i>
+            </a>
+            <a href="https://vk.com/your_profile" target="_blank">
+                <i class="fab fa-vk"></i>
+            </a>
+            <a href="https://instagram.com/your_profile" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
