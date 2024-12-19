@@ -469,13 +469,49 @@ footer a:hover {
     }
 }
 
+@media (max-width: 730px) {
+    .container {
+        max-width: 640px;
+    }
+    
+    .movie-card {
+        width: 300px;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 675px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .modal-description {
+        font-size: 0.9em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    #ratings p {
+        font-size: 1.2em;
+    }
+
+    #about p {
+        font-size: 1.2em;
+    }
+
+}
+
+
 @media (max-width: 600px) {
     .modal-content {
         flex-direction: column; 
     }
 
     .modal-description {
-        margin-left: 0; 
+        margin-left: 0px; 
+        margin-right: 0px;
         margin-top: 10px; 
     }
 
@@ -492,3 +528,50 @@ footer a:hover {
         padding: 0; 
     }
 }
+
+@media (max-width: 570px) {
+    .container {
+        max-width: 440px;
+    }
+
+    #ratings p {
+        text-align: left;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 460px) {
+    .container {
+        padding: 0 30px;
+    }
+
+    #welcome {
+        margin-top: 80px;
+        visibility: hidden;
+        height: 0px;
+    }
+
+    .movie-card {
+        max-width: 300px;
+    }
+
+    #ratings p {
+        font-size: 1em;
+    }
+
+    #about p {
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    #about {
+        padding: 20px 0px
+    }
+}
+
